@@ -1,0 +1,12 @@
+## this file contains metadata information for genomes under analysis
+## for a complete description of currently supported features, please
+## take a look into "User_guide.txt". In brief:
+
+#GENOME - genome file name (e.g "Homo_sapiens.gb" means that SIGNATURES will look for a file with this name in the input directory)
+
+#STRANDEDNESS - either "single" or "double" to indicate if an organism's genome is composed of single- or double-stranded DNA/RNA
+
+#GROUP - group to be used for summarizing results and for label colouring in heatmaps
+
+GENOME	STRANDEDNESS	GROUP
+

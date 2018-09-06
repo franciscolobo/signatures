@@ -1,0 +1,16 @@
+#Before release
+
+- validate parameters more thoroughtfuly
+- better validation protocols
+- add unitary test validation
+- finish writing documentation/install
+- add install script
+- try to distribute SIGNATURES with dependencies
+- compute other codon usage metrics?
+- add html output
+- analyse eukarya genomes that methylate and do no methylate genomes
+
+#Future versions
+
+- Implement chaos/fractal-like view
+- DOCKER version

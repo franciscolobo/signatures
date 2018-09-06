@@ -1,0 +1,27 @@
+INSTALL INSTRUCTIONS
+
+1) PRE-REQUISITES
+
+SIGNATURES request users to install some pre-requisites to work properly. We
+hope to have a 
+
+- Perl modules:
+
+ - BioPerl (modules Sequence::IO, Bio::Tools::CodonTable, )
+ - Parallel::ForkManager
+
+
+- R packages:
+
+ - RColorBrewer
+ - corrplot
+ - dendextend
+ - ggbiplot
+ - ggplot2
+ - ggrepel
+ - gplots
+ - gridExtra
+ - pvclust
+ - reshape2
+ - tidyr
+

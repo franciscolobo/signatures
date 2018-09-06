@@ -1,0 +1,99 @@
+#This is an example of a configuration file for SIGNATURES.
+#To attribute a value to a parameter, you can use an
+# " = " sign with zero or more spaces at each side.
+
+##MANDATORY PARAMETERS##
+
+# Output directory where results and temporary files will be recorded
+outdir_path = /Users/chico/projects/doutorado_tarcisio_final/bin/SIGNATURES/test/output/
+
+
+# Codon usage table. Please refer to
+# https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
+# to get a complete description of the available genetic codes. In brief:
+#
+# 1 - The Standard Code
+# 2 - The Vertebrate Mitochondrial Code
+# 3 - The Yeast Mitochondrial Code
+# 4 - The Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code
+# 5. - The Invertebrate Mitochondrial Code
+# 6 - The Ciliate, Dasycladacean and Hexamita Nuclear Code
+# 9 - The Echinoderm and Flatworm Mitochondrial Code
+# 10 - The Euplotid Nuclear Code
+# 11 - The Bacterial, Archaeal and Plant Plastid Code
+# 12 - The Alternative Yeast Nuclear Code
+# 13 - The Ascidian Mitochondrial Code
+# 14 - The Alternative Flatworm Mitochondrial Code
+# 16 - Chlorophycean Mitochondrial Code
+# 21 - Trematode Mitochondrial Code
+# 22 - Scenedesmus obliquus Mitochondrial Code
+# 23 - Thraustochytrium Mitochondrial Code
+# 24 - Pterobranchia Mitochondrial Code
+# 25 - Candidate Division SR1 and Gracilibacteria Code
+# 26 - Pachysolen tannophilus Nuclear Code
+# 27 - Karyorelict Nuclear
+# 28 - Condylostoma Nuclear
+# 29 - Mesodinium Nuclear
+# 30 - Peritrich Nuclear
+# 31 - Blastocrithidia Nuclear
+codon_table = 1
+
+
+#Number of processors
+cpu_number = 3
+
+
+# tasks to be computed. Currently supported tasks are:
+# relative synonym codon usage - "rscu"
+# Dinucleotide odds ratio - "dinuc_odds_ratio"
+# Effective number of codons - "enc"
+# Nucleotide frequency per codon position - "nuc_per_position"
+#tasks = nuc_per_position
+tasks = rscu, dinuc_odds_ratio, enc, nuc_per_position
+
+
+# path to metadata file. Used to describe some properties for
+# each genome under analysis such as strandedness and
+# experimental group.
+metadata_file_path = /Users/chico/projects/doutorado_tarcisio_final/bin/SIGNATURES/test/metadata.txt
+
+
+
+##OPTIONAL PARAMETERS##
+
+# Those are some optional, advanced parameters you may eventually wish to
+# configure. Most users should not need to go beyond this point.
+
+#sequence length lower bound cutoff (nts)
+sequence_length_cutoff = 100
+
+#sequence quality filters. Accepted values are numbers ranging from 1 to 5
+#and the string "all".
+#
+
+
+#FILTERING PLOTTING/ANALYSIS OPTIONS
+sequence_quality_filter = "all"
+summarize_per_locus = TRUE
+
+##DINUC PLOTTING/ANALYSIS OPTIONS##
+
+
+##PVCLUST PLOTTING/ANALYSIS OPTIONS##
+
+#turn pvclust analysis on or off
+pvclust_boolean = FALSE
+
+#number of bootstraps for pvclust
+pvclust_bootstrap = 10000
+
+
+##HEATMAP PLOTTING OPTIONS
+
+#do not display row labels (if you have less than 20/30 genomes to compare
+#you may wish to turn this on)
+display_row_labels = FALSE
+
+#will plot z-score transformated values when computing, it's usually better
+#to visualize differences
+normalize_heatmap = TRUE
